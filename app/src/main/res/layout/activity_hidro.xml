@@ -1,41 +1,270 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txth1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2F2F2"
     tools:context=".Hidro">
-
-    <TextView
-        android:id="@+id/headerText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#28A138"
-        android:gravity="start"
-        android:padding="16dp"
-        android:text="Penyiraman Otomatis"
-        android:textColor="#FFFF"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="#28A138"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/arrow_left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="0dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_back"
+                app:layout_constraintBottom_toBottomOf="@+id/headerText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/headerText"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Penyiraman Otomatis"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/arrow_left"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imghidro"
-        android:layout_width="match_parent"
-        android:layout_height="370dp"
+        android:layout_width="408dp"
+        android:layout_height="350dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        app:srcCompat="@drawable/hidro1" />
+        app:srcCompat="@drawable/hidro1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-10dp" />
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
     <View
-        android:id="@+id/rectangle_5"
-        android:layout_width="328dp"
-        android:layout_height="59dp"
+        android:id="@+id/rectangle_1"
+        android:layout_width="331dp"
+        android:layout_height="65dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="331dp"
-        android:background="#FFFFFF" />
+        android:background="#FFFF"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="292dp"
+        tools:ignore="MissingConstraints" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/txtKD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kondisi Daun"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <Button
+        android:id="@+id/buttonKD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Normal"
+        android:background="@drawable/btnhijau"
+        android:textColor="#276831"
+        android:textColorHint="#AC0D0D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="331dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFF"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="368dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Penyiraman"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="387dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/buttonSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnmerah"
+        android:backgroundTint="#F8E2E2"
+        android:text="Mati"
+        android:textColor="#890B0B"
+        android:textColorHint="#AC0D0D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="331dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFF"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="440dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txtLS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Scanned"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <Button
+        android:id="@+id/buttonLS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnbiru"
+        android:text="3/12/2023  13.47"
+        android:textColor="#004F8F"
+        android:textColorHint="#AC0D0D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <TextView
+        android:id="@+id/txtHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Histori penyiraman"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="510dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/hp1"
+        android:layout_width="312dp"
+        android:layout_height="34dp"
+        android:background="#E8EDF1"
+        android:backgroundTint="#E8EDF1"
+        android:ems="10"
+        android:gravity="left"
+        android:inputType="text"
+        android:text="3/12/2023 13:47"
+        android:textColor="#252A31"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,DuplicateClickableBoundsCheck"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="548dp" />
+
+    <ImageButton
+        android:id="@+id/arrow_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="312dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/hp1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hp1"
+        app:layout_constraintVertical_bias="0.562"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/hp2"
+        android:layout_width="312dp"
+        android:layout_height="34dp"
+        android:background="#E8EDF1"
+        android:backgroundTint="#E8EDF1"
+        android:ems="10"
+        android:gravity="left"
+        android:inputType="text"
+        android:text="3/12/2023 13:47"
+        android:textColor="#252A31"
+        tools:ignore="DuplicateIds,MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <ImageButton
+        android:id="@+id/arrow_right1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="312dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/hp1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hp2"
+        app:layout_constraintVertical_bias="0.152"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/hp3"
+        android:layout_width="312dp"
+        android:layout_height="34dp"
+        android:background="#E8EDF1"
+        android:backgroundTint="#E8EDF1"
+        android:ems="10"
+        android:gravity="left"
+        android:inputType="text"
+        android:text="3/12/2023 13:47"
+        android:textColor="#252A31"
+        tools:ignore="DuplicateIds,MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="632dp" />
+
+    <ImageButton
+        android:id="@+id/arrow_right2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="312dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/hp1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hp3"
+        app:layout_constraintVertical_bias="0.07"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
