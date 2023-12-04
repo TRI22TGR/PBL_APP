@@ -59,7 +59,7 @@ public class Login extends AppCompatActivity {
                             if (snapshot.child(username).exists()){
                                 if (snapshot.child(username).child("password").getValue(String.class).equals(password)){
                                     Toast.makeText(getApplicationContext(), "Login Berhasil", Toast.LENGTH_SHORT).show();
-                                    Intent masuk = new Intent(getApplicationContext(), MainActivity.class);
+                                    Intent masuk = new Intent(getApplicationContext(), HomeActivity.class);
                                     startActivity(masuk);
                                 }
                             }else{
