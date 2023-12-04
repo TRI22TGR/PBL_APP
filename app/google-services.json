@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "712743670899",
+    "project_id": "pblapp-43704",
+    "storage_bucket": "pblapp-43704.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712743670899:android:5a57b871348fc62a0e4606",
+        "android_client_info": {
+          "package_name": "com.example.pblapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs7GicV1qV1HADUit6swFaOZ7_AD7x_sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
