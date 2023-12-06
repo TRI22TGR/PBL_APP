@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tomato">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:background="#28A138"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/arrow_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Kualitas Panen Tomat"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/arrow_left"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imghidro"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+        app:srcCompat="@drawable/tomato1"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/imghidro"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Item 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/txtKD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matang Sempurna"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/buttonMS"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btnhijau"
+                    android:text="2"
+                    android:textColor="#276831"
+                    android:textColorHint="#AC0D0D"/>
+            </RelativeLayout>
+
+            <!-- Item 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/txtSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Setengah Matang"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/buttonSM"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btnhijau"
+                    android:text="6"
+                    android:textColor="#276831"
+                    android:textColorHint="#AC0D0D"/>
+            </RelativeLayout>
+
+            <!-- Item 3 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/txtLS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentah"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/buttonM"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btnhijau"
+                    android:text="23"
+                    android:textColor="#276831"
+                    android:textColorHint="#AC0D0D"/>
+            </RelativeLayout>
+
+            <!-- Item 4 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFF">
+
+                <TextView
+                    android:id="@+id/txtLS1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Total buah"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Button KD3 -->
+                <Button
+                    android:id="@+id/buttonTB"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btnbiru"
+                    android:text="108"
+                    android:textColor="#004F8F"
+                    android:textColorHint="#AC0D0D" />
+            </RelativeLayout>
+
+            <!-- Item 5 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFF">
+
+                <TextView
+                    android:id="@+id/txtLS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Last scanned"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Button KD4 -->
+                <Button
+                    android:id="@+id/buttonLsc"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btnbiru"
+                    android:text="3/12/2023  13.47"
+                    android:textColor="#004F8F"
+                    android:textColorHint="#AC0D0D" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtHP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Histori penyiraman"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"/>
+
+                <TextView
+                    android:id="@+id/hp1"
+                    android:layout_width="312dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/txtHP"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#E8EDF1"
+                    android:ems="12"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:text="3/12/2023 13:47"
+                    android:textColor="#252A31" />
+
+                <ImageButton
+                    android:id="@+id/arrow_right"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/hp1"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/hp1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/arrow_right"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/hp2"
+                    android:layout_width="312dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/hp1"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#E8EDF1"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:text="3/12/2023 13:47"
+                    android:textColor="#252A31" />
+
+                <ImageButton
+                    android:id="@+id/arrow_right1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/hp2"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/hp2"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/arrow_right"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/hp3"
+                    android:layout_width="312dp"
+                    android:layout_height="34dp"
+                    android:layout_below="@+id/hp2"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#E8EDF1"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:text="3/12/2023 13:47"
+                    android:textColor="#252A31"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/arrow_right2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/hp3"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/hp3"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/arrow_right"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

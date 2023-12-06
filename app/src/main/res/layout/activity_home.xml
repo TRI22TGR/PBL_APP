@@ -60,9 +60,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/h2" />
 
-
-
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -89,6 +86,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/Txttomat"
                         android:layout_width="wrap_content"
@@ -99,6 +97,7 @@
                         android:textColor="#282828"
                         android:textSize="16sp"
                         android:textStyle="bold" />
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
@@ -150,9 +149,6 @@
                         android:layout_height="160dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/h3" />
-
-
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
