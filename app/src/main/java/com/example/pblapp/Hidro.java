@@ -19,7 +19,7 @@ public class Hidro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Tambahkan kode untuk kembali ke HomeActivity
-                Intent intent = new Intent(Penyiraman.this, HomeActivity.class);
+                Intent intent = new Intent(Hidro.this, HomeActivity.class);
                 startActivity(intent);
                 finish(); // Optional, untuk menutup activity saat ini dari stack
             }
