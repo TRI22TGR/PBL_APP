@@ -2,326 +2,230 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/txth1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F2F2F2"
     tools:context=".Hidro">
 
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="0dp"
+    <View
+        android:id="@+id/view1"
+        android:layout_width="427dp"
+        android:layout_height="55dp"
+        android:background="#28A138"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:text="Penyiraman Otomatis"
+        android:textColor="#FFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/transparent"
+        android:padding="12dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imghidro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/hidro1" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="370dp"
+        android:layout_height="62dp"
+        android:background="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#28A138">
-
-            <ImageButton
-                android:id="@+id/arrow_left"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="0dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/arrow_back"
-                app:layout_constraintBottom_toBottomOf="@+id/headerText"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/headerText"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
-                android:id="@+id/headerText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:gravity="left"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="Penyiraman Otomatis"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/arrow_left"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <ImageView
-            android:id="@+id/imghidro"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            app:srcCompat="@drawable/hidro1"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-10dp" />
-    </LinearLayout>
-
+        app:layout_constraintVertical_bias="0.518" />
 
     <View
-        android:id="@+id/rectangle_1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="12dp"
+        android:id="@+id/view3"
+        android:layout_width="367dp"
+        android:layout_height="64dp"
         android:background="#FFFF"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:background="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
 
     <TextView
-        android:id="@+id/txtKD"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="324dp"
+        android:fontFamily="@font/kukgeru"
         android:text="Kondisi Daun"
-        android:textSize="16sp"
+        android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonKD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="14dp"
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/btnhijau"
+        android:padding="10dp"
         android:text="Normal"
         android:textColor="#276831"
-        android:textColorHint="#AC0D0D"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
-        tools:ignore="MissingConstraints" />
-
-    <View
-        android:id="@+id/rectangle_2"
-        android:layout_width="0dp"
-        android:layout_height="65dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="64dp"
-        android:background="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonLS"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonKD"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtSP"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/kukgeru"
         android:text="Status Penyiraman"
-        android:textSize="16sp"
+        android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_2"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     <Button
-        android:id="@+id/buttonSP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="7dp"
+        android:id="@+id/button2"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="36dp"
         android:background="@drawable/btnmerah"
-        android:backgroundTint="#F8E2E2"
         android:text="Mati"
-        android:textColor="#890B0B"
-        android:textColorHint="#AC0D0D"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
-        tools:ignore="MissingConstraints" />
-
-    <View
-        android:id="@+id/rectangle_3"
-        android:layout_width="0dp"
-        android:layout_height="67dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="32dp"
-        android:background="#FFFF"
-        app:layout_constraintBottom_toTopOf="@+id/arrow_right"
+        android:textColor="#AC0D0D"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSP"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     <TextView
-        android:id="@+id/txtLS"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/kukgeru"
         android:text="Last Scanned"
-        android:textSize="16sp"
+        android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/buttonLS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button3"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/btnbiru"
         android:text="3/12/2023  13.47"
         android:textColor="#004F8F"
-        android:textColorHint="#AC0D0D"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:background="#FFFBF5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
     <TextView
-        android:id="@+id/txtHP"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="3dp"
-        android:text="Histori penyiraman"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_3"
-        tools:ignore="MissingConstraints" />
-
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="525dp"
+        android:fontFamily="@font/cukuruk"
+        android:text="Histori Penyiraman"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/hp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
 
     <TextView
         android:id="@+id/hp1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginBottom="9dp"
+        android:layout_width="353dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
         android:background="#E8EDF1"
         android:backgroundTint="#E8EDF1"
         android:ems="10"
         android:gravity="left"
         android:inputType="text"
+        android:padding="8dp"
         android:text="3/12/2023 13:47"
         android:textColor="#252A31"
-        app:layout_constraintBottom_toTopOf="@+id/hp2"
-        app:layout_constraintEnd_toEndOf="@+id/hp2"
-        app:layout_constraintStart_toStartOf="@+id/hp2"
-        app:layout_constraintTop_toTopOf="@+id/arrow_right"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
-
-    <ImageButton
-        android:id="@+id/arrow_right"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginBottom="43dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/arrow_right"
-        app:layout_constraintBottom_toBottomOf="@+id/arrow_right1"
-        app:layout_constraintEnd_toEndOf="@+id/arrow_right1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/arrow_right1"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLS"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/hp2"
-        android:layout_width="0dp"
+        android:layout_width="353dp"
         android:layout_height="34dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="55dp"
         android:background="#E8EDF1"
         android:backgroundTint="#E8EDF1"
         android:ems="10"
         android:gravity="left"
         android:inputType="text"
+        android:padding="8dp"
         android:text="3/12/2023 13:47"
         android:textColor="#252A31"
-        app:layout_constraintBottom_toBottomOf="@+id/arrow_right2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/arrow_right"
-        tools:ignore="DuplicateIds,MissingConstraints,TouchTargetSizeCheck" />
-
-    <ImageButton
-        android:id="@+id/arrow_right1"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="99dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/arrow_right"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/arrow_right2"
-        app:layout_constraintStart_toStartOf="@+id/arrow_right2"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/hp3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="7dp"
-        android:background="#E8EDF1"
-        android:backgroundTint="#E8EDF1"
-        android:ems="10"
-        android:gravity="left"
-        android:inputType="text"
-        android:text="3/12/2023 13:47"
-        android:textColor="#252A31"
-        app:layout_constraintBottom_toBottomOf="@+id/arrow_right2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/arrow_right2"
-        tools:ignore="DuplicateIds,MissingConstraints,TouchTargetSizeCheck" />
-
-    <ImageButton
-        android:id="@+id/arrow_right2"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="56dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/arrow_right"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/hp2"
-        app:layout_constraintTop_toTopOf="@+id/arrow_right1"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
