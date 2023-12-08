@@ -126,7 +126,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="64dp"
         android:background="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonLS"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/buttonKD"
@@ -193,11 +193,11 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/buttonLS"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/btnbiru"
         android:text="3/12/2023  13.47"
         android:textColor="#004F8F"
@@ -251,7 +251,7 @@
         app:layout_constraintEnd_toEndOf="@+id/arrow_right1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/arrow_right1"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLS"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -268,12 +268,14 @@
         android:ems="10"
         android:gravity="left"
         android:inputType="text"
-        android:text="3/12/2023 13:47"
+        android:text="2/11/2023 11:44"
         android:textColor="#252A31"
         app:layout_constraintBottom_toBottomOf="@+id/arrow_right2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/arrow_right"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="DuplicateIds,MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageButton
@@ -301,12 +303,14 @@
         android:ems="10"
         android:gravity="left"
         android:inputType="text"
-        android:text="3/12/2023 13:47"
+        android:text="5/10/2023 10:47"
         android:textColor="#252A31"
         app:layout_constraintBottom_toBottomOf="@+id/arrow_right2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/arrow_right2"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="DuplicateIds,MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageButton

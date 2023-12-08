@@ -236,12 +236,12 @@
                     android:layout_height="48dp"
                     android:layout_below="@+id/hp1"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="7dp"
                     android:background="#E8EDF1"
                     android:ems="10"
                     android:gravity="left"
                     android:inputType="text"
-                    android:text="3/12/2023 13:47"
+                    android:text="7/11/2023 12:32"
                     android:textColor="#252A31" />
 
                 <ImageButton
@@ -266,7 +266,7 @@
                     android:ems="10"
                     android:gravity="left"
                     android:inputType="text"
-                    android:text="3/12/2023 13:47"
+                    android:text="9/10/2023 11:25"
                     android:textColor="#252A31"
                     tools:ignore="TouchTargetSizeCheck" />
 

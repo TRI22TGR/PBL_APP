@@ -58,8 +58,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imghidro"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,20 +71,20 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFFF"
-                android:layout_marginTop="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFF">
 
                 <TextView
                     android:id="@+id/txtKD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Matang Sempurna"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/buttonMS"
@@ -92,27 +94,27 @@
                     android:background="@drawable/btnhijau"
                     android:text="2"
                     android:textColor="#276831"
-                    android:textColorHint="#AC0D0D"/>
+                    android:textColorHint="#AC0D0D" />
             </RelativeLayout>
 
             <!-- Item 2 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFFF"
-                android:layout_marginTop="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFF">
 
                 <TextView
                     android:id="@+id/txtSP"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Setengah Matang"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/buttonSM"
@@ -122,27 +124,27 @@
                     android:background="@drawable/btnhijau"
                     android:text="6"
                     android:textColor="#276831"
-                    android:textColorHint="#AC0D0D"/>
+                    android:textColorHint="#AC0D0D" />
             </RelativeLayout>
 
             <!-- Item 3 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFFF"
-                android:layout_marginTop="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFF">
 
                 <TextView
                     android:id="@+id/txtLS"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Mentah"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/buttonM"
@@ -152,7 +154,7 @@
                     android:background="@drawable/btnhijau"
                     android:text="23"
                     android:textColor="#276831"
-                    android:textColorHint="#AC0D0D"/>
+                    android:textColorHint="#AC0D0D" />
             </RelativeLayout>
 
             <!-- Item 4 -->
@@ -216,6 +218,7 @@
                     android:textColor="#004F8F"
                     android:textColorHint="#AC0D0D" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -224,11 +227,11 @@
                     android:id="@+id/txtHP"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:text="Histori penyiraman"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/hp1"
@@ -266,7 +269,7 @@
                     android:ems="10"
                     android:gravity="left"
                     android:inputType="text"
-                    android:text="3/12/2023 13:47"
+                    android:text="6/11/2023 12:34"
                     android:textColor="#252A31" />
 
                 <ImageButton
@@ -291,7 +294,7 @@
                     android:ems="10"
                     android:gravity="left"
                     android:inputType="text"
-                    android:text="3/12/2023 13:47"
+                    android:text="20/10/2023 11:31"
                     android:textColor="#252A31"
                     tools:ignore="TouchTargetSizeCheck" />
 
